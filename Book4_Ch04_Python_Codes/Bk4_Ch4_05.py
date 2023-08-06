@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -11,20 +10,16 @@
 import numpy as np
 
 # define matrix
-A = np.matrix([[1, 2], 
-               [3, 4],
-               [5, 6]])
+A = np.matrix([[1, 2], [3, 4], [5, 6]])
 
 # scaler
-k = 2;
+k = 2
 
 # column vector c
-c = np.array([[3],
-              [2],
-              [1]])
+c = np.array([[3], [2], [1]])
 
 # row vector r
-r = np.array([[2,1]])
+r = np.array([[2, 1]])
 
 # broadcasting principles
 

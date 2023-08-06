@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -10,12 +9,14 @@
 
 import numpy as np
 
-A = np.matrix([[1,2,3],
-              [4,5,6],
-              [7,8,9]])
+A = np.matrix([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(A)
 
 # extract diagonal elements
 a = np.diag(A)
 
+print(a)
+
 # construct a diagonal matrix
 A_diag = np.diag(a)
+print(A_diag)
