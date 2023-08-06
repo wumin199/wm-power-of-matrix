@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -14,7 +13,9 @@ a = np.array([[4, 3]])
 b = np.array([[5, -2]])
 
 a_dot_b = np.inner(a, b)
+print(a_dot_b)
 
 a_2 = np.array([[4], [3]])
 b_2 = np.array([[5], [-2]])
-a_dot_b_2 = a_2.T@b_2
+a_dot_b_2 = a_2.T @ b_2
+print(a_dot_b_2)

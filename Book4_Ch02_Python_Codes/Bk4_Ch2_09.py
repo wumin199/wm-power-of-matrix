@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -13,10 +12,27 @@ import numpy as np
 a, b = np.array([[4], [3]]), np.array([[5], [-2]])
 
 # calculate cosine theta
-cos_theta = (a.T @ b) / (np.linalg.norm(a,2) * np.linalg.norm(b,2))
+cos_theta = (a.T @ b) / (np.linalg.norm(a, 2) * np.linalg.norm(b, 2))
 
 # calculate theta in radian
 cos_radian = np.arccos(cos_theta)
 
 # convert radian to degree
-cos_degree = cos_radian * ((180)/np.pi)
+cos_degree = cos_radian * ((180) / np.pi)
+
+
+print(cos_degree)
+
+print("--------------------------------")
+
+a, b = np.array([[4, 3]]), np.array([[5, -2]])
+# calculate cosine theta
+# cos_theta = (np.inner(a, b)) / (np.linalg.norm(a, 2) * np.linalg.norm(b, 2))
+cos_theta = (a @ b.T) / (np.linalg.norm(a, 2) * np.linalg.norm(b, 2))
+# calculate theta in radian
+cos_radian = np.arccos(cos_theta)
+
+# convert radian to degree
+cos_degree = cos_radian * ((180) / np.pi)
+
+print(cos_degree)
