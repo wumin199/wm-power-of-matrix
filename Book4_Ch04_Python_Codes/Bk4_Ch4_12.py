@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -10,12 +9,10 @@
 
 import numpy as np
 
-A = np.matrix([[1, 2], 
-               [3, 4]])
+A = np.matrix([[1, 2], [3, 4]])
 
 print(A.I)
 
-B = np.array([[1, 2], 
-              [3, 4]])
+B = np.array([[1, 2], [3, 4]])
 
 print(B.I)

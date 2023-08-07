@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -10,12 +9,14 @@
 
 import numpy as np
 
-A = np.array([[1,2],
-              [3,4]])
+A = np.array([[1, 2], [3, 4]])
 
-B = np.array([[5,6],
-              [7,8]])
+B = np.array([[5, 6], [7, 8]])
 
 # Hadamard product
-A_times_B_piecewise = np.multiply(A,B)
-A_times_B_piecewise_V2 = A*B
+A_times_B_piecewise = np.multiply(A, B)
+A_times_B_piecewise_V2 = A * B
+
+
+print(A_times_B_piecewise)
+print(A_times_B_piecewise_V2)
