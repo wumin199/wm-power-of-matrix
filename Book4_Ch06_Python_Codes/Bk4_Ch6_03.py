@@ -48,3 +48,4 @@ ax = sns.heatmap(A_kron_B,cmap='RdYlBu_r',vmax = 1,vmin = -1,
                  cbar_kws={"orientation": "horizontal"})
 ax.set_aspect("equal")
 plt.title('C')
+plt.show()

@@ -52,3 +52,4 @@ for i in np.arange(4):
 # Visualize reproduced C
 plot_heatmap(C_rep,'C reproduced')
 
+plt.show()
