@@ -1,4 +1,3 @@
-
 ###############
 # Authored by Weisheng Jiang
 # Book 4  |  From Basic Arithmetic to Machine Learning
@@ -11,23 +10,28 @@
 
 import numpy as np
 
-A = np.array([[1, 2, 3, 0,  0],
-              [4, 5, 6, 0,  0],
-              [0, 0, 0, -1, 0],
-              [0, 0 ,0, 0,  1]])
+A = np.array([[1, 2, 3, 0, 0], [4, 5, 6, 0, 0], [0, 0, 0, -1, 0], [0, 0, 0, 0, 1]])
+
+print("A: \n{}".format(A))
 
 # NumPy array slicing
 
-A_1_1 = A[0:2,0:3]
+A_1_1 = A[0:2, 0:3]
 
-A_1_2 = A[0:2,3:]
+A_1_2 = A[0:2, 3:]
 # A_1_2 = A[0:2,-2:]
-A_2_1 = A[2:,0:3]
+A_2_1 = A[2:, 0:3]
 # A_2_1 = A[-2:,0:3]
-A_2_2 = A[2:,3:]
+A_2_2 = A[2:, 3:]
 # A_2_2 = A[-2:,-2:]
+
+print("A_1_1: \n{}".format(A_1_1))
+print("A_1_2: \n{}".format(A_1_2))
+print("A_2_1: \n{}".format(A_2_1))
+print("A_2_2: \n{}".format(A_2_2))
 
 # Assemble a matrix from nested lists of blocks
 
-A_ = np.block([[A_1_1, A_1_2],
-               [A_2_1, A_2_2]])
+A_ = np.block([[A_1_1, A_1_2], [A_2_1, A_2_2]])
+
+print("A_: \n{}".format(A_))
