@@ -172,6 +172,8 @@ fig.add_trace(
     2,
 )
 
+# 行和列都重绘，都画在第一行第二列
+
 fig.add_trace(
     go.Scatter(x=Txvyv[0], y=Txvyv[1], mode="lines", line_width=lw, line_color="red"),
     1,

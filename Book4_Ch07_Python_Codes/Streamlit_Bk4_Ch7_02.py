@@ -15,12 +15,19 @@ with st.sidebar:
                     max_value = 20,
                     min_value = 10,
                     step = 1)
-    
+
 x1 = np.linspace(0,1,num)
 x2 = x1
 x3 = x1
 
 xx1,xx2,xx3 = np.meshgrid(x1,x2,x3)
+
+
+# # 创建一个二维数组
+# arr = np.array([[1, 2, 3], [4, 5, 6]])
+# # 使用 np.ravel 展平数组
+# flat_arr = np.ravel(arr)
+# print(flat_arr)   [1 2 3 4 5 6]
 
 x1_ = xx1.ravel()
 x2_ = xx2.ravel()
@@ -39,8 +46,8 @@ trace = go.Scatter3d(x=df.X,
                       z=df.Z,
                       mode='markers',
                       marker=dict(size=3,
-                                  color=['rgb({},{},{})'.format(r,g,b) 
-                                         for r,g,b in 
+                                  color=['rgb({},{},{})'.format(r,g,b)
+                                         for r,g,b in
                                          zip(df.R.values, df.G.values, df.B.values)],
                                   opacity=0.9,))
 

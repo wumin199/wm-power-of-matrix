@@ -1,3 +1,14 @@
 {
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+
+    "[python]": {
+    "editor.rulers": [100],
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.wordWrapColumn": 100,
+    "editor.wordWrap": "bounded"
+    },
 }
